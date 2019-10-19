@@ -1,0 +1,14 @@
+version: '2'
+services:
+  database:
+    image: postgres:9.6
+    environment:
+      POSTGRES_USER: mikkotan
+      POSTGRES_PASSWORD: root
+    volumes:
+      - postgres_data:/var/lib/postgresql_data
+    ports:
+      - 5432:5432
+  
+volumes:
+  postgres_data:
