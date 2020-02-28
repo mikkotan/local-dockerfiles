@@ -6,7 +6,7 @@ services:
       POSTGRES_USER: mikkotan
       POSTGRES_PASSWORD: root
     volumes:
-      - postgres_data:/var/lib/postgresql_data
+      - postgres_data:/var/lib/postgresql/data/
     ports:
       - 5432:5432
   
